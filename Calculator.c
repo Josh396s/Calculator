@@ -26,6 +26,10 @@ int main() {
     double x, y;
     printf("Enter a command +, -, *, /:\n");
     scanf("%c", &op);
+    if(op != "+" || op != "-" || op != "*" || op != "/"){
+        fprintf(stderr, "Please enter a valid command!!!!!!!!!!\n");
+        exit();
+    }
     printf("Enter first operand:\n");
     scanf("%lf", &x);
     printf("Enter second operand:\n");
@@ -53,7 +57,7 @@ int main() {
         break;
 
         default:
-        printf("Please enter a valid command\n");
+        printf("Please enter a valid commandddddddddddddd\n");
     }
     return 0;
 }
